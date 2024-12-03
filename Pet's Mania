@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet's Mania</title>
+    <style>
+        /* Estilos Gerais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #fff;
+            background-color: #b39ddb;
+            /* Fundo roxo mais claro */
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #9575cd;
+            /* Roxo mais claro */
+        }
+
+        header .logo h1 {
+            font-size: 2rem;
+            color: #000;
+            background-color: #fff;
+            /* Fundo branco */
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        header .logo span {
+            color: #fdd835;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        header nav ul li a:hover {
+            color: #fdd835;
+        }
+
+        /* Seção Banner */
+        #banner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        #banner h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        #banner span {
+            color: #fdd835;
+            font-weight: bold;
+        }
+
+        #banner img {
+            max-width: 60%;
+            /* Redimensionado para ficar proporcional */
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Seção Quem Somos */
+        #quem-somos {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            padding: 50px;
+            background-color: #d1c4e9;
+            /* Fundo roxo mais claro */
+        }
+
+        #quem-somos .texto {
+            max-width: 50%;
+            font-size: 1.1rem;
+            color: #ffffff;
+            /* Texto em branco */
+            text-align: justify;
+        }
+
+        #quem-somos .imagem {
+            max-width: 45%;
+            background-color: #fff;
+            /* Fundo branco */
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        #quem-somos .imagem img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Seção Serviços */
+        #servicos {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #9575cd;
+            /* Roxo mais claro */
+        }
+
+        #servicos h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .servicos-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .servico {
+            text-align: center;
+        }
+
+        .servico img {
+            width: 120px;
+            height: auto;
+            margin-bottom: 10px;
+            filter: brightness(1.5) hue-rotate(45deg);
+            /* Ícones em tom amarelo */
+        }
+
+        .servico p {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #fdd835;
+            /* Destaque no texto */
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #b39ddb;
+            /* Roxo mais claro */
+            text-align: center;
+            padding: 20px;
+            color: #fff;
+        }
+
+        footer h2 {
+            font-size: 1.5rem;
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+
+        footer .redes-sociais {
+            margin: 10px 0;
+        }
+
+        footer .redes-sociais a img {
+            width: 30px;
+            margin: 0 10px;
+            transition: transform 0.3s;
+        }
+
+        footer .redes-sociais a img:hover {
+            transform: scale(1.1);
+        }
+
+        footer .rodape {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>Pet's <span>Mania</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#quem-somos">Quem somos</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="banner">
+        <div class="banner-texto">
+            <h2>O lugar em que o seu pet <span>CONFIA</span> 🐾</h2>
+        </div>
+        <div class="banner-imagem"><img src="img/CachorroChapeu.png" alt="Cães com chapéus estilosos"></div>
+    </section>
+
+    <section id="quem-somos">
+        <div class="texto">
+            <h2>Quem somos?</h2>
+            <p>
+                Na Mimos'pet, entendemos que seu pet é parte da sua família, e por isso oferecemos serviços
+                especializados para garantir o bem-estar e a saúde deles.
+                Com uma equipe qualificada e apaixonada por animais, prestamos serviços de saúde, banho e tosa com todo
+                o cuidado que seu bichinho merece.
+                Nossa missão é proporcionar um ambiente acolhedor e seguro, onde cada pet é tratado com amor e atenção.
+            </p>
+        </div>
+        <div class="imagem">
+            <img src="img/HomemDog.png" alt="Homem segurando cachorro">
+        </div>
+    </section>
+
+    <section id="servicos">
+        <h2>Serviços</h2>
+        <div class="servicos-container">
+            <div class="servico"><img src="Icons/icon banho.svg" alt="Ícone banho">
+                <p>Banho</p>
+            </div>
+            <div class="servico"><img src="Icons/icon tosa.svg" alt="Ícone tosa">
+                <p>Tosa</p>
+            </div>
+            <div class="servico"><img src="Icons/icon saude.svg" alt="Ícone saúde">
+                <p>Saúde</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contato">
+        <h2>Contato</h2>
+        <p>(81) 9 4002-8922</p>
+        <div class="redes-sociais">
+            <a href="#"><img src="Icons/icon facebook.svg" alt="Facebook"></a>
+            <a href="#"><img src="Icons/icon instagram.svg" alt="Instagram"></a>
+            <a href="#"><img src="icons/icon envelope.svg" alt="Email"></a>
+        </div>
+        <div class="rodape">
+            <p>© 2024 Pet's Mania</p>
+        </div>
+    </footer>
+</body>
+
+</html>
